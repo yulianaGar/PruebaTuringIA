@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   
+   <title>Turing IA</title>
+   <link rel="icon" href="icon/logo.png">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ <!-- AJAX-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="controlador.js"></script>
+
+</head>
+
+<body class="main-layout">
+   <!-- Animacion de cargando  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+
+   <header>
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html">Turing-IA</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                              <a class="nav-link btn btn-secondary" href="index.html">Inicio</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link btn btn-secondary" href="about.html">Nosotros</a>
+                           </li>
+                           <li class="nav-item">
+                              <div class="dropdown">
+                               <a class="btn btn-secondary dropdown-toggle nav-link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href="servicios.html">Servicios</a>
+                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Business Analyst</a></li>
+                                <li><a class="dropdown-item" href="#">Workshop</a></li>
+                                <li><a class="dropdown-item" href="#">Capacitacion</a></li>
+                                <li><a class="dropdown-item" href="#">Venta de software</a></li>
+                                <li><a class="dropdown-item" href="#">Hardware</a></li>
+                                <li><a class="dropdown-item" href="#">Desarrollo de software</a></li>
+                                <li><a class="dropdown-item" href="#">Balanced Scorecard</a></li>
+                             </ul>
+                          </div>
+
+                       </li>
+                       <li class="nav-item">
+                         <div class="dropdown">
+                               <a class="btn btn-secondary dropdown-toggle nav-link" href="Tableau.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Tableau</a>
+                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Desktop</a></li>
+                                <li><a class="dropdown-item" href="#">Prep</a></li>
+                                <li><a class="dropdown-item" href="#">Cloud</a></li>
+                                <li><a class="dropdown-item" href="#">Server</a></li>
+                                <li><a class="dropdown-item" href="#">Server Management</a></li>
+                                <li><a class="dropdown-item" href="#">Data Managment</a></li>
+                             </ul>
+                          </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link btn btn-secondary" href="portal.html">Portal</a>
+                     </li> 
+                     <li class="nav-item">
+                        <a class="nav-link btn btn-secondary" href="blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link btn btn-secondary" href="contact.html">Contacto</a>
+                     </li>
+                  </ul>
+               </div>
+               <br>
+            </nav>
+            <div style="align-content: right;">
+               <ul class="social_icon">
+                  <li><a href="https://www.facebook.com/people/Turing-Inteligencia-Artificial/100072141934213/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/IaTuring"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://mx.linkedin.com/company/turing-inteligencia-artificial"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/ia_turing/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+             <div class="text-bg">
+               <span>Bienvenido</span>
+               <h1>Hacemos los datos fáciles de usar</h1>
+               <a href="contact.html">Contactáctanos</a>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="text_img">
+               <img src="icon/logo.png" width="550px" alt="#"/>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+</header>
+
+<!-- banner -->
+<section class="banner_main">
+   <div id="cabeceraVideo" class="cabeceraVideo">
+      <video id="video" class="video" autoplay muted loop>
+       <source src="images/TuringVideoPortada.mp4" type="video/mp4">
+       </video>
+    </div>
+
+
+ </section>
+ <!-- end banner -->
+
+ <!-- QUE REALIZAMOS -->
+ <div class="customer">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titlepage">
+               <p>QUE REALIZAMOS</p>
+               <h1>Contribuimos con su empresa para mejorar la toma de decisiones a través de sus datos.</h1>
+               
+               <form action="about.html">
+                  <input type="submit" name="b1" value="MÁS INFORMACIÓN" class="btn btn-info">
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<!-- laptop  section -->
+<div class="laptop">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8">
+            <div class="titlepage">
+               <p>LA MANERA IDEAL PARA MANEJAR TUS DATOS</p>
+               <h1>Somos el socio estratégico que necesitas para potenciar los datos de tu organización.
+               Contamos con más de 15 años de experiencia brindando soluciones innovadoras, adaptadas a las necesidades de nuestros clientes, en más de 10 industrias y diferentes áreas funcionales.</h1>
+               <input type="button" name="b1" value="MÁS INFORMACIÓN" class="btn btn-info">
+            </div>
+         </div>
+         <div class="col-md-2">
+            <div class="laptop_box">
+               <img src="images/graficas.gif">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<!-- end laptop  section -->
+
+<!-- practice section -->
+<section class="practice_section layout_padding">
+  <div class="container">
+   <div class="d-flex flex-column align-items-center">
+     <h1>TECNOLOGIAS QUE UTILIZAMOS</h1>
+  </div>
+  <div class="practice_container">
+    <div class="practice_box">
+     <div class="practice_img-box">
+        <i><img src="images/tecnoly-tableau.png" alt="https://www.tableau.com/es-mx"/></i>
+     </div>
+     <h4>
+      Tableau
+   </h4>
+</div>
+<div class="practice_box">
+  <div class="practice_img-box">
+   <i><img src="images/salesforce (2).jpg" alt="https://www.salesforce.com/mx/"/></i>
+</div>
+<h4>
+   SalesForce
+</h4>
+</div>
+<div class="practice_box">
+  <div class="practice_img-box">
+   <i><img src="images/pmi2.png" alt="#"/></i>
+</div>
+<h4>
+   PMI
+</h4>
+</div>
+<div class="practice_box">
+  <div class="practice_img-box">
+    <i><img src="images/scrum.png" alt="#"/></i>
+ </div>
+ <h4>
+   SCRUMM
+</h4>
+</div>
+</div> 
+</div>
+</section>
+
+
+<div class="laptop">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titlepage">
+               <p>Historia de clientes</p>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <center><img src="images/1.jpg" class="d-block w-50" alt="..."></center>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="bg-info">Grupo Petersen crea una cultura de datos con Tableau</h1>
+     
+      </div>
+    </div>
+    <div class="carousel-item">
+      <center><img src="images/2.jpg" class="d-block w-50" alt="..."></center>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="bg-info">Red Hat adopta el Blueprint de Tableau y Tableau Online, y profundiza en la cultura de datos con más de 4500 empleados en menos de un año</h1>
+   
+      </div>
+    </div>
+    <div class="carousel-item">
+      <center><img src="images/3.jpg" class="d-block w-50" alt="..."></center>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="bg-info">Verizon usa Tableau para reducir las llamadas de soporte en un 43 % y así mejorar la experiencia del cliente</h1>
+      
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> 
+      </div>
+   </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- customer -->
+<div class="customer">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titlepage">
+               <h2>LO QUE TE OFRECEMOS</h2>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <div id="myCarousel" class="carousel slide customer_Carousel " data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>  
+                  <li data-target="#myCarousel" data-slide-to="5"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="carousel-caption ">
+                           <div class="row">
+                              <div class="col-md-9 offset-md-3">
+                                 <div class="test_box">
+                                    <h4>VENTA DE SOFTWARE</h4>
+                                    <p>Nos dedicamos a la venta de licencias de software, podemos recomendarle los sistemas que de acuerdo a sus necesidades son más adecuados.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <div class="row">
+                              <div class="col-md-9 offset-md-3">
+                                 <div class="test_box">
+                                    <h4>VENTA DE HARDWARE</h4>
+                                    <p>Trabajamos con los mejores proveedores de México y tenemos la capacidad de cubrir cualquier necesidad que tenga de hardware. Redes, computadoras, impresoras y accesorios.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <div class="row">
+                              <div class="col-md-9 offset-md-3">
+                                 <div class="test_box">
+                                    <h4>IMPLEMENTACIÓN DE PROYECTOS (BUSINESS ANALYST)</h4>
+                                    <p>Nuestra metodología de servicios se encuentra orientada en los estándares del Project Management Institute (PMI) ® e International Project Management Association (IPMA). Esto nos permite contar con las competencias para coordinar equipos de trabajo en el inicio, planeación, construcción, monitoreo y control de las actividades y recursos involucrados en un proyecto a partir de los objetivos y requerimientos de nuestro cliente.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <div class="row">
+                              <div class="col-md-9 offset-md-3">
+                                 <div class="test_box">
+                                    <h4>DESARROLLO DE APLICACIONES</h4>
+                                    <p>En un mundo moderno, con la cantidad de problemas y su complejidad cada vez es mayor, el desarrollo de aplicaciones, una herramienta para obtener soluciones precisas, dándole tareas repetitivas a la computadora y logrando así la "automatización" de procesos que todavía requieren la intervención de las personas en tareas repetitivas.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <div class="row">
+                              <div class="col-md-9 offset-md-3">
+                                 <div class="test_box">
+                                    <h4>CAPACITACIÓN</h4>
+                                    <p>Nuestra gama de cursos de Tableau incluye: Tableau Prep Tableau Desktop Visual Analytics Tableau Server Adicionalmente ofrecemos cursos sobre: Business Intelligence, Data Mining, Big Data, Data to Insight.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <div class="row">
+                              <div class="col-md-9 offset-md-3">
+                                 <div class="test_box">
+                                    <h4>WORKSHOP (BLUE PRINT)</h4>
+                                    <p>Su estrategia debe abarcar la gestión de personas, procesos y cambios, incluida la identificación de casos de uso comercial inmediatos, la definición de roles, responsabilidades, el establecimiento de medidas para evaluar el éxito y el impacto.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- end customer -->
+
+<!--  contact -->
+<section class="contact_section layout_padding">
+  <div class="container">
+   <div class="d-flex justify-content-center d-md-block">
+    <h2>Contactáctanos</h2>
+ </div>
+ <div class="row">
+   <div class="col-md-6">
+      <form onsubmit="formContacto(); return false" id="formContacto">
+         <div class="contact_form-container">
+        <div>
+          <div><input type="text" placeholder="Nombre" id="name" name="name" required></div>
+         <div><input type="email" placeholder="Correo" id="correo" name="correo" required></div>
+         <div><input type="number" placeholder="Numero de telefono" id="tel" name="tel" required></div>
+         <div><input type="text" placeholder="Puesto (Opcional)" id="puesto" name="puesto"></div>
+         <div><input type="text" placeholder="Empresa (Opcional)" id="empresa" name="empresa"></div>
+         <div class="mt-10"><input type="text" placeholder="Escribe tu mensaje aquí (Opcional)" id="sms" name="sms" required></div>
+         <div class="mt-5 d-flex justify-content-center justify-content-sm-start">
+            <input type="submit" value="Enviar" id="enviar" class="btn btn-warning"></div>
+         </div>
+      </div>
+   </form></div>
+   <div class="col-md-6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7527.725116006979!2d-99.171455!3d19.375103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8908d745e6168858!2sTuring%20-%20Inteligencia%20Artificial!5e0!3m2!1ses-419!2smx!4v1670286158368!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+</div>
+</div>
+</section>
+<!-- end contact -->
+
+
+<div class="laptop">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8">
+            <center>
+               <a href="https://calendly.com/turing-ia-web/web-client">
+                  <input type="button" name="b1" value="Ponte en contanto con un especialista" class="btn btn-info">
+               </a> 
+             <br>
+             <img src="icon/gmail.png" width="100px"></center>
+             <h3 style="text-align: center; color: white;">contacto@turing-ia.com</h3>
+             <center> <img src="icon/telefono.png" width="100px"></center>
+             <h3 style="text-align: center; color: white;">tel:+527225336638</h3>
+          </div>
+          <div class="col-md-2">
+            <div class="laptop_box">
+               <center><img src="icon/abierto.png" width="100px"></center>
+               <h3 style="text-align: center; color: white;"> <b>Horario</b> <br> Lunes a Viernes7 a.m. - 7 p.m. <br> UTC-6</h3>
+               <center> <img src="icon/mapa.png" width="100px"></center>
+               <h3 style="text-align: center; color: white;">Av. Insurgentes Sur 601,Nápoles, Benito Juárez, 03810 Ciudad de México, CDMX</h3>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!--  footer -->
+<footer>
+   <div class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+               <div class="logo">
+                  <a href="index.html">Turing Inteligencia Artificial</a>
+               </div>
+               <ul class="social_icon">
+                  <h3>Síguenos en nuestras redes</h3>
+                  <li><a href="https://www.facebook.com/people/Turing-Inteligencia-Artificial/100072141934213/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/IaTuring"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://mx.linkedin.com/company/turing-inteligencia-artificial"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/ia_turing/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>Ubicacion</h3>
+                     <ul class="about_us">
+                        <li>Av. Insurgentes 601 <br>Col. Nápoles, Benito Juárez <br>Ciudad de México, México</li>
+                     </ul>
+                     <br>
+                     <h3>Contactanos</h3>
+                     <ul class="conta">
+                        <li>
+                           Teléfono de contacto:<br>
+                           +52 (722) 936-96-65 <br><br>
+                           Correo electrónico:<br>
+                           contacto@turing-ia.com
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>Mapa de sitio</h3>
+                     <ul class="about_us">
+                        <li> <a  id="liny" class="liny" href="index.html">Inicio</a></li>
+                        <li> <a id="liny" class="liny" href="about.html">Nosotros</a> </li>
+                        <li> <a id="liny" class="liny" href="servicios.html">Servicios</a> </li>
+                        <li> <a id="liny" class="liny" href="Tableau.html">Tableau</a> </li>
+                        <li> <a id="liny" class="liny" href="portal.html">Portal</a> </li>
+                        <li> <a id="liny" class="liny" href="blog.html">Blog</a> </li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>Nuestros servicios</h3>
+                     <ul class="conta">
+                        <li><a  id="liny" class="liny" href="#">Implementación de Proyectos (Business Analyst)</a></li>
+                        <li> <a id="liny" class="liny" href="#"> Workshop (Blue Print)</a> </li>
+                        <li> <a id="liny" class="liny" href="#">Capacitación</a> </li>
+                        <li> <a id="liny" class="liny" href="#">Venta de Software</a> </li>
+                        <li> <a id="liny" class="liny" href="#">Venta de Hardware</a> </li>
+                        <li> <a id="liny" class="liny" href="#">Desarrollo de Aplicaciones</a> </li>
+                        <li> <a id="liny" class="liny" href="#">Balanced Scorecard</a> </li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <form class="bottom_form" onsubmit="enviar_ajax(); return false" id="form1" >
+                        <h3>Inscríbete a nuestro newsletter</h3>
+                        <input class="enter" placeholder="Correo electrónico" type="text" name="Enter your email" id="mail">
+                        <input type="submit" class="sub_btn" value="Enviar"/>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by Yuliana Garcia Gutierrez para Turing-IA</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+</footer>
+ <button class="btn-flotante"><a href="https://api.whatsapp.com/send?phone=527225336638&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."><img src="images/watt.png" width="50px"></a></button>
+
+
+<!-- end footer -->
+
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<!-- sidebar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
+
